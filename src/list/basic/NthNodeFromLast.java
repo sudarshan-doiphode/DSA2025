@@ -72,10 +72,10 @@ public class NthNodeFromLast {
         Node temp = head;
         int size = size();
         int lastIndex = size - index; //6-3=3  // 0 , 1 ,2 ,3-> O based index
-        for (int i = 0; i < lastIndex - 1; i++) {
+        for (int i = 0; i <= lastIndex - 1; i++) {
             temp = temp.next;
         }
-        return temp.next.data;
+        return temp.data;
     }
 
     int size() {
